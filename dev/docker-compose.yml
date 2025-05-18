@@ -3,7 +3,6 @@ services:
     build:
       context: ../
       dockerfile: ./Dockerfile
-    container_name: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
     env_file:
